@@ -8,6 +8,24 @@ h1 {
 }
 </style>
 
+<script>
+	(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script type="text/javascript">
+	window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+</script>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+
 <article class="post">
   <div class="date">
     {{ page.date | date: "%B %e, %Y" }}
@@ -17,6 +35,16 @@ h1 {
   <div class="entry">
     {{ content }}
   </div>
-  {% include share.html}
+  
+  <div class="social">
+		<h3 class="share-title">Share this:</h3>
+
+		<div id="fb-root"></div>
+		<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+		<a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
+		<g:plusone annotation="inline" width="150"></g:plusone>
+		  <!--g:plusone></g:plusone-->
+  </div>
+  
   {% include disqus.html disqus_identifier=page.disqus_identifier %}
 </article>
