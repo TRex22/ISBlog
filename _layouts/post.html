@@ -8,6 +8,18 @@ h1 {
 }
 </style>
 
+<style type="text/css">
+ 
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+ 
+</style>
+
 <article class="post">
   <div class="date">
     {{ page.date | date: "%B %e, %Y" }}
@@ -21,18 +33,34 @@ h1 {
   <div class="social">
 		<h3 class="share-title">Share this:</h3>
 
-		<p>
-			<iframe src="http://www.facebook.com/plugins/like.php?href={{ site.baseurl }}{{page.url}}&amp;send=false&amp;layout=button_count&amp;width=110&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=segoe+ui&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:21px;">
-			</iframe>&nbsp;
-			
-			<iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1411706120.html#_=1412093964844&amp;count=horizontal&amp;counturl={{ site.baseurl }}{{page.url}}&amp;id=twitter-widget-1&amp;lang=en&amp;original_referer={{ site.baseurl }}{{page.url}}&amp;size=m&amp;text={{ site.baseurl }}{{page.url}}" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 108px; height: 20px;">
-			</iframe>
-			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>&nbsp;
-			<div id="___plusone_1" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background: transparent;">
-				<iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I1_1412093964893" name="I1_1412093964893" src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;size=medium&amp;origin={{ site.baseurl }}{{page.url}}&amp;url={{ site.baseurl }}{{page.url}}&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_GB.46jOWZ9LFJg.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAItRSTN2_HfIGTGP8-43L2NX74Ib5By7NA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I1_1412093964893&amp;parent={{ site.baseurl }}&amp;pfname=&amp;rpctoken=56025072" data-gapiattached="true" title="+1">
-			</iframe>
-			</div>
-		</p>
+		<!-- I got these buttons from simplesharebuttons.com -->
+		<div id="share-buttons">
+		 
+		<!-- Facebook -->
+		<a href="http://www.facebook.com/sharer.php?u={{ site.baseurl }}{{page.url}}" target="_blank">{% include svg-icons/facebook.html %}</a>
+		 
+		<!-- Twitter -->
+		<a href="http://twitter.com/share?url={{ site.baseurl }}{{page.url}}&text={{page.title}}&hashtags={{page.title}}, jasonchalom, TRex22, keduce22" target="_blank">{% include svg-icons/twitter.html %}</a>
+		 
+		<!-- Google+ -->
+		<a href="https://plus.google.com/share?url={{ site.baseurl }}{{page.url}}" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
+		 
+		<!-- Digg -->
+		<a href="http://www.digg.com/submit?url={{ site.baseurl }}{{page.url}}" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/diggit.png" alt="Digg" /></a>
+		 
+		<!-- Reddit -->
+		<a href="http://reddit.com/submit?url={{ site.baseurl }}{{page.url}}&title={{page.title}}" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+		 
+		<!-- LinkedIn -->
+		<a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.baseurl }}{{page.url}}" target="_blank">{% include svg-icons/linkedin.html %}</a>
+		 
+		<!-- StumbleUpon-->
+		<a href="http://www.stumbleupon.com/submit?url={{ site.baseurl }}{{page.url}}&title=Simple Share Buttons" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/stumbleupon.png" alt="StumbleUpon" /></a>
+		 
+		<!-- Email -->
+		<a href="mailto:?Subject={{page.title}}&Body=I%20saw%20this%20and%20thought%20of%20you!%20 {{ site.baseurl }}{{page.url}}">{% include svg-icons/email.html %}</a>
+		 
+		</div>
   </div>
   
   {% include disqus.html disqus_identifier=page.disqus_identifier %}
