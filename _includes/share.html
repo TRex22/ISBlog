@@ -1,17 +1,44 @@
-<div class="sharedaddy sd-sharing-enabled">
-	  <div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing">
-		  <h3 class="sd-title">Share this:</h3>
-		  <div class="sd-content">
-			  <ul>
-				  <li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://ernestloveland.co.za/2014/06/11/avoiding-gui-in-unity/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook" id="sharing-facebook-562"><span>Facebook</span></a></li>
-				  <li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://ernestloveland.co.za/2014/06/11/avoiding-gui-in-unity/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter" id="sharing-twitter-562"><span>Twitter</span></a></li>
-				  <li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="http://ernestloveland.co.za/2014/06/11/avoiding-gui-in-unity/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+" id="sharing-google-562"><span>Google</span></a></li>
-				  <li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="http://ernestloveland.co.za/2014/06/11/avoiding-gui-in-unity/?share=reddit&amp;nb=1" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon sd-button share-icon" href="http://ernestloveland.co.za/2014/06/11/avoiding-gui-in-unity/?share=stumbleupon&amp;nb=1" target="_blank" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li>
-				  <li class="share-linkedin"><a rel="nofollow" class="share-linkedin sd-button share-icon" href="http://ernestloveland.co.za/2014/06/11/avoiding-gui-in-unity/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn" id="sharing-linkedin-562"><span>LinkedIn</span></a></li>
-				  <li class="share-email share-service-visible"><a rel="nofollow" class="share-email sd-button share-icon" href="http://ernestloveland.co.za/2014/06/11/avoiding-gui-in-unity/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li>
-				  <li class="share-print"><a rel="nofollow" class="share-print sd-button share-icon" href="http://ernestloveland.co.za/2014/06/11/avoiding-gui-in-unity/#print" target="_blank" title="Click to print"><span>Print</span></a></li>
-				  <li class="share-end"></li>
-			  </ul>
-		  </div>
-	  </div>
-  </div>
+<!--h3 class="share-title">Share this:</h3>
+<div class="share-content">
+  <ul>
+	  <li class="share-facebook"><a rel="nofollow" class="share-facebook" href="" title="Share on Facebook" id="sharing-facebook-562"><span>Facebook</span></a></li>
+	  <li class="share-twitter"><a rel="nofollow" class="share-twitter" href="" title="Click to share on Twitter" id="sharing-twitter-562"><span>Twitter</span></a></li>
+	  <li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1" href="" title="Click to share on Google+" id="sharing-google-562"><span>Google</span></a></li>
+	  <li class="share-reddit"><a rel="nofollow" class="share-reddit" href="" title="Click to share on Reddit"><span>Reddit</span></a></li>
+	  <li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon" href="" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li>
+	  <li class="share-linkedin"><a rel="nofollow" class="share-linkedin" href="" title="Click to share on LinkedIn" id="sharing-linkedin-562"><span>LinkedIn</span></a></li>
+	  <li class="share-email share-service-visible"><a rel="nofollow" class="share-email" href="" title="Click to email this to a friend"><span>{% include svg-icons/email.html %}</span></a></li>
+	  <li class="share-print"><a rel="nofollow" class="share-print" href="" title="Click to print"><span>Print</span></a></li>
+  </ul>
+</div-->
+
+<!-- Will work on that at some other point -->
+<!-- TODO Move JS into a library -->
+
+<!-- found on dev sites for respective social media -->
+
+<h3 class="share-title">Share this:</h3>
+
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+<div id="fb-root"></div>
+<script>
+	(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
+
+<script type="text/javascript">
+window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+</script>
+
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<g:plusone annotation="inline" width="150"></g:plusone>
+  <!--g:plusone></g:plusone-->
