@@ -4,12 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This is my coding blog where I post about coding things I have seen, or I am doing at the moment.
+There may also be some other posts about other things I am involoved with in my life.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Any information about me can be found at my home page.
