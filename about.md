@@ -4,7 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is a blog I have put together for my Information Systems 2A, semester course.
-I will document my progress through this course from now until June 2015.
+Some information about you!
 
-Any information about me can be found at my home page.
+### More Information
+
+A place to include any other types of information that you'd like to include about yourself.
+
+### Contact me
+
+[email@domain.com](mailto:email@domain.com)
