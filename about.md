@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This is a blog I have put together for my Information Systems 2A, semester course.
+I will document my progress through this course from now until June 2015.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Any information about me can be found at my home page.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[is.contact@jasonchalom.com](mailto:is.contact@jasonchalom.com)

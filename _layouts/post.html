@@ -3,14 +3,47 @@ layout: default
 ---
 
 <article class="post">
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
   <h1>{{ page.title }}</h1>
 
   <div class="entry">
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+  <div class="social">
+		<h3 class="share-title">Share this:</h3>
+
+		<!-- I got these buttons from simplesharebuttons.com -->
+		<div id="share-buttons">
+
+		<!-- Facebook -->
+		<a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ site.baseurl }}{{page.url}}" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+
+		<!-- Twitter -->
+		<a href="http://twitter.com/share?url={{ site.url }}{{ site.baseurl }}{{page.url}}&text={{page.title}}&hashtags={{page.title}}, jasonchalom, TRex22, keduce22" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+
+		<!-- Google+ -->
+		<a href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{page.url}}" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
+
+		<!-- Digg -->
+		<a href="http://www.digg.com/submit?url={{ site.url }}{{ site.baseurl }}{{page.url}}" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/diggit.png" alt="Digg" /></a>
+
+		<!-- Reddit -->
+		<a href="http://reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{page.url}}&title={{page.title}}" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+
+		<!-- LinkedIn -->
+		<a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{page.url}}" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+
+		<!-- StumbleUpon-->
+		<a href="http://www.stumbleupon.com/submit?url={{ site.url }}{{ site.baseurl }}{{page.url}}&title=Simple Share Buttons" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/stumbleupon.png" alt="StumbleUpon" /></a>
+
+		<!-- Email -->
+		<a href="mailto:?Subject={{page.title}}&Body=I%20saw%20this%20and%20thought%20of%20you!%20 {{ site.url }}{{ site.baseurl }}{{page.url}}"><img src="http://www.simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a>
+
+		</div>
   </div>
 
   {% include disqus.html %}
