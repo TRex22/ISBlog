@@ -1,4 +1,4 @@
-blog
-====
-
-My blog site, I will create an interface which will allow the creation of a blog within a bit repository.
+ISBlog
+======
+This is a copy of my personal blog which I am using to do a project for my information systems course.
+See: @barryclark
