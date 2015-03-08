@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Coding Blog
+name: IS 2A Blog
 
 # Short bio or description (displayed in the header)
-description: Some Random Ramblings from A Programmer.
+description: A blog about my course
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 #avatar: https://raw.githubusercontent.com/TRex22/blog/gh-pages/images/jekyll-logo.png
@@ -29,10 +29,11 @@ footer-links:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: trex2218
   stackoverflow: users/3836650/user3836650
+  # youtube: channel/UCC1_aPaQGEjVEaDdY3POEmA
   # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts
-disqus:
+disqus: TRex22
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-46778548-3
@@ -45,7 +46,7 @@ url: http://jasonchalom.com
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/blog"
+baseurl: "/ISBlog"
 
 #
 # !! You don't need to change any of the configuration flags below !!

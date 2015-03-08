@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This is my coding blog where I post about coding things I have seen, or I am doing at the moment.
-There may also be some other posts about other things I am involoved with in my life.
+This is a blog I have set-up for my information systems 2A course.
+My progress through the course will be documented here.
 
 Any information about me can be found at my home page.
