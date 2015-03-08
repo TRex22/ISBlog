@@ -29,11 +29,11 @@ footer-links:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: trex2218
   stackoverflow: users/3836650/user3836650
-  # youtube: channel/UCC1_aPaQGEjVEaDdY3POEmA
+  youtube: channel/UCC1_aPaQGEjVEaDdY3POEmA
   # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts
-disqus: TRex22
+disqus: trex22blog
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-46778548-3
