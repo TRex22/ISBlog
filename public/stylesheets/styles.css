@@ -198,7 +198,7 @@ pre {
   -o-border-radius: 1px;
   border-radius: 1px;
   border: 1px solid #1A1A1C;
-  overflow: auto;
+  overflow:hidden;
   overflow-y: hidden;
 }
 
