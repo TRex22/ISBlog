@@ -2,7 +2,7 @@
 layout: post
 title: I am Struggling...
 ---
-#I am not sure what to do :-/
+##I am not sure what to do :-/
 :cold_sweat:
 
 This has been the most stressed I have ever been from any of my studies. I have to pass mathematics, and I seem to constantly be behind in course work and work in general.
